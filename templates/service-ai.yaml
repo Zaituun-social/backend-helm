@@ -1,3 +1,4 @@
+{{- if (.Values.ai.enabled) }}
 apiVersion: v1
 kind: Service
 metadata:
@@ -13,3 +14,4 @@ spec:
       name: http
   selector:
     app.kubernetes.io/name: ai-server
+{{- end }}

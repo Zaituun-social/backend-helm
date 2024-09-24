@@ -11,6 +11,7 @@ image:
   pullPolicy: IfNotPresent
 
 ai: 
+  enabled: false
   web:
     port: 9000
     replicas: 1
@@ -19,7 +20,7 @@ ai:
     tag:
 
 qdrant:
-  enabled: true
+  enabled: false
 
 mastodon:
   # Labels added to every Mastodon-related object
