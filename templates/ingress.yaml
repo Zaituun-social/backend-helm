@@ -42,7 +42,7 @@ spec:
             backend:
               serviceName: ai-service
               servicePort: {{ .Values.ai.web.port }}
-          {{ - end }}
+          {{- end }}
           {{- range .paths }}
           - path: {{ .path }}
             backend:
