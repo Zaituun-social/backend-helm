@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app.kubernetes.io/name: ai-server
+  name: ai-server
+spec:
+  replicas: {{ .Values.ai.web.replicas }}
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: ai-server
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: ai-server
+    spec:
+      {{- with .Values.imagePullSecrets }}
+      imagePullSecrets:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      containers:
+        - image: "{{ coalesce .Values.ai.image.repository .Values.image.repository }}:{{ coalesce .Values.ai.image.tag .Chart.AppVersion }}"
+          name: ai-server
+          imagePullPolicy: {{coalesce .Values.ai.image.pullPolicy .Values.image.pullPolicy }}
+          ports:
+            - name: http
+              containerPort: {{ .Values.ai.web.port }}
+              protocol: TCP
+        #   readinessProbe:
+        #       httpGet:
+        #         path: /health
+        #         port: http
+        #   startupProbe:
+        #       httpGet:
+        #         path: /health
+        #         port: http
+        #       initialDelaySeconds: 15
+        #       failureThreshold: 30
+        #       periodSeconds: 5
+            
+      restartPolicy: Always
