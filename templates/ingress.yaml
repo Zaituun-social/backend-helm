@@ -37,6 +37,10 @@ spec:
     - host: {{ .host | quote }}
       http:
         paths:
+          - path: /ai(/|$)(.*)
+            backend:
+              serviceName: ai-service
+              servicePort: {{ .Values.ai.web.port }}
           {{- range .paths }}
           - path: {{ .path }}
             backend:
