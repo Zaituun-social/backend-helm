@@ -126,9 +126,9 @@ mastodon:
       private_key: "Nk_AW6BPeWdtgMBQYLN37hJIv0F7X1x7ILS-v9_PqRg="
       public_key: "BPm-qrzfNLKCkexrvof3RPOmk0e3qD6wYHZxN1w3i0A-SeDbhF0aAxX46NU2gYCDnKt1IBV31ISBJFP1XskZgnk="
     activeRecordEncryption:
-      primaryKey: ""
-      deterministicKey: ""
-      keyDerivationSalt: ""
+      primaryKey: "d9e6a4a14257f7f84d1bbcd9b7af2330f60b320e32a18c8dabe67265fbc9d843"
+      deterministicKey: "7c5f5d92e2b76e1a679a1a24494d015b65269b7e6fd7ab8b9f2d9a1e46da5a4f"
+      keyDerivationSalt: "fc3ba947b7d5e4c1278d4ab13b865711"
     # -- you can also specify the name of an existing Secret
     # with keys:
     # - SECRET_KEY_BASE
