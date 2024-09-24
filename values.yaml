@@ -10,6 +10,17 @@ image:
   # use `Always` when using `latest` tag
   pullPolicy: IfNotPresent
 
+ai: 
+  web:
+    port: 9000
+    replicas: 1
+  image:
+    repository:
+    tag:
+
+qdrant:
+  enabled: true
+
 mastodon:
   # Labels added to every Mastodon-related object
   labels: {}

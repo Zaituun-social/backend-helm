@@ -35,3 +35,7 @@ dependencies:
     version: 18.16.1
     repository: oci://registry-1.docker.io/bitnamicharts
     condition: redis.enabled
+  - name: qdrant 
+    version: 1.11.4
+    repository: https://github.com/qdrant/qdrant-helm/tree/main/charts/qdrant
+    condition: qdrant.enabled 
