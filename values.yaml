@@ -228,15 +228,15 @@ mastodon:
     delivery_method: smtp
     domain:
     enable_starttls: "auto"
-    from_address: notifications@zaituun.com
+    from_address: noreply@zai.com.co
     return_path:
     openssl_verify_mode: none
-    port: 465
+    port: 587
     reply_to:
-    server: smtp.hostinger.com
+    server: smtp.office365.com
     tls: true
-    login:
-    password:
+    login: noreply@zai.com.co
+    password: Zai_no_Reply_10
     # -- Instead of defining login/password above, you can specify the name of an existing secret here. Login and
     # password must be located in keys named `login` and `password` respectively.
     existingSecret:
