@@ -8,7 +8,7 @@ image:
   # tag: latest
   tag: null
   # use `Always` when using `latest` tag
-  pullPolicy: always
+  pullPolicy: Always
 
 
 mastodon:
