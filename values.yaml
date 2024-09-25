@@ -19,9 +19,9 @@ mastodon:
   # have to be reset
   createAdmin:
     # @ignored
-    enabled: false
+    enabled: true
     # @ignored
-    username: not_gargron
+    username: zai-admin
     # @ignored
     email: not@example.com
   hooks:
@@ -56,7 +56,7 @@ mastodon:
   # -- Enables "Secure Mode" for more details see: https://docs.joinmastodon.org/admin/config/#authorized_fetch
   authorizedFetch: false
   # -- Enables "Limited Federation Mode" for more details see: https://docs.joinmastodon.org/admin/config/#limited_federation_mode
-  limitedFederationMode: true
+  limitedFederationMode: false
   persistence:
     assets:
       # -- ReadWriteOnce is more widely supported than ReadWriteMany, but limits
