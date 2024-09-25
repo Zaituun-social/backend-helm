@@ -1,0 +1,52 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: ai
+  name: ai-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ai
+  template:
+    metadata:
+      labels:
+        app: ai
+    spec:
+      containers:
+        - image: zaiclusterregistry.azurecr.io/ai/server:1.0
+          name: ai-v1
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 9000
+          resources:
+            requests:
+              memory: "1000Mi"
+              cpu: "250m"
+            limits:
+              memory: "3000Mi"
+              cpu: "500m"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: ai-Service
+  name: ai-service
+spec:
+  ports:
+    - name: "api"
+      port: 80
+      targetPort: 9000
+  selector:
+    app: ai
+# ---
+# apiVersion: v1
+# kind: Service
+# metadata:
+#   name: external-ai-service
+#   namespace: mastodon-backend 
+# spec:
+#   type: ExternalName
+#   externalName: ai-service.ai.svc.cluster.local
