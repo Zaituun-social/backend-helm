@@ -37,6 +37,14 @@ spec:
     - host: {{ .host | quote }}
       http:
         paths:
+          - backend:
+              service:
+                # name: external-ai-service
+                name: ai-service
+                port:
+                  number: 80
+            path: /ai
+            pathType: Prefix
           {{- range .paths }}
           - path: {{ .path }}
             backend:
