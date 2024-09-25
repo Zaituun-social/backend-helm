@@ -23,7 +23,7 @@ mastodon:
     # @ignored
     username: zai-admin
     # @ignored
-    email: not@example.com
+    email: ahmed.nader@zaituun.com
   hooks:
     dbMigrate:
       enabled: true
