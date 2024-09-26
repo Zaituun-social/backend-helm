@@ -10,6 +10,7 @@ metadata:
     "helm.sh/hook-delete-policy": before-hook-creation,hook-succeeded
     "helm.sh/hook-weight": "-1"
 spec:
+  ttlSecondsAfterFinished: 1000
   template:
     metadata:
       name: {{ include "mastodon.fullname" . }}-create-admin
