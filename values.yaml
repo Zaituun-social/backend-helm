@@ -21,7 +21,7 @@ mastodon:
     # @ignored
     enabled: true
     # @ignored
-    username: admin
+    username: zaiadmin
     # @ignored
     email: ahmed.nader@zaituun.com
   hooks:
