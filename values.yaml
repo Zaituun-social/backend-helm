@@ -224,15 +224,15 @@ mastodon:
     #    - default
   smtp:
     auth_method: plain
-    ca_file: 
+    # ca_file: 
     delivery_method: smtp
-    domain:
+    domain: zai.com.co
     enable_starttls: "auto"
     from_address: noreply@zai.com.co
     return_path:
-    openssl_verify_mode: none
+    openssl_verify_mode: peer
     port: 587
-    reply_to:
+    # reply_to:
     server: smtp.office365.com
     tls: true
     login: noreply@zai.com.co
