@@ -21,7 +21,7 @@ mastodon:
     # @ignored
     enabled: true
     # @ignored
-    username: zai-admin
+    username: admin
     # @ignored
     email: ahmed.nader@zaituun.com
   hooks:
@@ -228,15 +228,15 @@ mastodon:
     delivery_method: smtp
     domain: zai.com.co
     enable_starttls: "auto"
-    from_address: noreply@zai.com.co
+    from_address: DoNotReply@zai.com.co
     return_path:
     openssl_verify_mode: peer
     port: 587
     # reply_to:
-    server: smtp.office365.com
+    server: smtp.azurecomm.net
     tls: true
-    login: noreply@zai.com.co
-    password: Zai_no_Reply_10
+    login:  zai.e611494c-f410-4925-8670-a9cfb11a4139.92d67165-e00a-45da-ac12-3eb7e98e61ec
+    password: KB98Q~06-h8gPk7fJKqI53XgRvAf1gdEAcZdXahg
     # -- Instead of defining login/password above, you can specify the name of an existing secret here. Login and
     # password must be located in keys named `login` and `password` respectively.
     existingSecret:
