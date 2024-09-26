@@ -226,7 +226,7 @@ mastodon:
     auth_method: plain
     # ca_file: 
     delivery_method: smtp
-    domain: zai.com.co
+    domain: api.zai.com.co
     enable_starttls: "auto"
     from_address: DoNotReply@zai.com.co
     return_path:
