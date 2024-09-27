@@ -226,15 +226,15 @@ mastodon:
     auth_method: plain
     # ca_file: 
     delivery_method: smtp
-    domain: zai.com.co
-    enable_starttls_auto: false
+    domain: api.zai.com.co
+    enable_starttls: "auto"
     from_address: DoNotReply@zai.com.co
     return_path:
     openssl_verify_mode: none
     port: 587
     # reply_to:
     server: smtp.azurecomm.net
-    tls: true
+    tls: 
     login: zai-comm|188eb3b2-a354-4d65-b69b-6036e856b5fc|92d67165-e00a-45da-ac12-3eb7e98e61ec
     password: lkB8Q~twEGBXXe~w93Q.~34gDqnJay20XIoS.cVg
     # specify the name of an existing secret here. Login and
