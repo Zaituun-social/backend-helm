@@ -230,7 +230,7 @@ mastodon:
     enable_starttls: "auto"
     from_address: DoNotReply@zai.com.co
     return_path:
-    openssl_verify_mode: peer
+    openssl_verify_mode: none
     port: 587
     # reply_to:
     server: smtp.azurecomm.net
