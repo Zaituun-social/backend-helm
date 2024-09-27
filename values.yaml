@@ -223,7 +223,7 @@ mastodon:
     #  queues:
     #    - default
   smtp:
-    auth_method: plain
+    auth_method: login
     # ca_file: 
     delivery_method: smtp
     domain: api.zai.com.co
