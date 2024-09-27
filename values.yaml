@@ -226,7 +226,7 @@ mastodon:
     auth_method: plain
     # ca_file: 
     delivery_method: smtp
-    domain: api.zai.com.co
+    domain: zai.com.co
     enable_starttls: "auto"
     from_address: DoNotReply@zai.com.co
     return_path:
@@ -235,9 +235,9 @@ mastodon:
     # reply_to:
     server: smtp.azurecomm.net
     tls: true
-    login: zai.e611494c-f410-4925-8670-a9cfb11a4139.92d67165-e00a-45da-ac12-3eb7e98e61ec
-    password: KB98Q~06-h8gPk7fJKqI53XgRvAf1gdEAcZdXahg
-    # -- Instead of defining login/password above, you can specify the name of an existing secret here. Login and
+    login: zai-comm|188eb3b2-a354-4d65-b69b-6036e856b5fc|92d67165-e00a-45da-ac12-3eb7e98e61ec
+    password: lkB8Q~twEGBXXe~w93Q.~34gDqnJay20XIoS.cVg
+    # specify the name of an existing secret here. Login and
     # password must be located in keys named `login` and `password` respectively.
     existingSecret:
   streaming:
