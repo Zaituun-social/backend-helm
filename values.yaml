@@ -227,7 +227,7 @@ mastodon:
     # ca_file: 
     delivery_method: smtp
     domain: zai.com.co
-    enable_starttls: "auto"
+    enable_starttls_auto: false
     from_address: DoNotReply@zai.com.co
     return_path:
     openssl_verify_mode: none
