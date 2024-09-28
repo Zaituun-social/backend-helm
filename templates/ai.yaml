@@ -15,8 +15,8 @@ spec:
         app: ai
     spec:
       containers:
-        - image: zaiclusterregistry.azurecr.io/ai/server:1.0
-          name: ai-v1
+        - image: "{{ .Values.ai.image.repository }}:{{ .Values.ai.image.tag}}"
+          name: {{ .Values.ai.image.tag }}-ai
           imagePullPolicy: Always
           ports:
             - containerPort: 9000

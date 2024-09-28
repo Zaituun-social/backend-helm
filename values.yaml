@@ -10,6 +10,10 @@ image:
   # use `Always` when using `latest` tag
   pullPolicy: Always
 
+ai: 
+  image:
+    repository: zaiclusterregistry.azurecr.io/ai/server
+    tag: 1.0
 
 mastodon:
   # Labels added to every Mastodon-related object
@@ -335,8 +339,8 @@ mastodon:
     workers: "2"
     persistentTimeout: "20"
     image:
-      repository: zaiclusterregistry.azurecr.io/ai/zai-mstdn-web
-      tag: v1.0
+      # repository: zaiclusterregistry.azurecr.io/ai/zai-mstdn-web
+      # tag: v1.0
     # allows you to mount a custom database.yml from a configmap
     # for example if you want to use a read-only replica
     customDatabaseConfigYml:
